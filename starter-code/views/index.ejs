@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <% students.forEach(student => { %>
-        <li><%= student %></li>
-    <% }) %>
-    <script src="main.js"></script>
-</body>
-</html>
+<% include partials/navbar.ejs %>
+<h1><%= title %></h1>
+<p>esto es un número <%= number %></p>
+<p><%= obj.prop %></p>
+<p><%= array[0] %></p>
+<ul>
+<% array.forEach(item => { %>
+    <li><%= item %></li>
+<% }) %>
+</ul>
+<% if (isLogged) { %>
+    <h2>Welcome <%= name %></h2>
+<% } else { %>
+    <h2>Logate</h2>
+<% } %>

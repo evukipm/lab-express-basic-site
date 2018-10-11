@@ -4,8 +4,8 @@
   "description": "Express Basic Website\r =====================",
   "main": "index.js",
   "scripts": {
-    "start": "node starter-code/app.js",
-    "dev": "nodemon starter-code/app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,14 +13,16 @@
     "url": "git+https://github.com/evukipm/lab-express-basic-site.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Evukipm",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/evukipm/lab-express-basic-site/issues"
   },
   "homepage": "https://github.com/evukipm/lab-express-basic-site#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-ejs-layouts": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
